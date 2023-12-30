@@ -1,22 +1,23 @@
 package com.tutorial;
 
-class Polos{
-   String dataString;
-   int dataInterger;
+class Mahasiswa{
+    String nama;
+    String nim;
+    String prodi;
 }
 
 public class Main {
-   public static void main(String[] args) {
-      // intansiasi objek
-      Polos pls = new Polos();
+    public static void main(String[] args) {
+         //instansiasi objek dari class Mahasiswa
+         Mahasiswa mhs1 = new Mahasiswa(); // proses instansiasi
+ 
+         // memberi atribut pada objek mhs1
+         mhs1.nama = "azizah";
+        mhs1.nim  = "22241047";
+        mhs1.prodi  = "pendidikan teknologi informasi";
 
-      // memberi nilai pada objek pls
-      pls.dataString = "polos";
-      pls.dataInterger = 110;
-
-      System.out.println("dataString : " + pls.dataString);
-      System.out.println("dataInterger : " + pls.dataInterger);
-
-
-   }
+        System.out.println("Nama : " + mhs1.nama);
+        System.out.println("NIM : "+ mhs1.nim);
+        System.out.println("Prodi :" + mhs1.prodi);
+    }
 }
